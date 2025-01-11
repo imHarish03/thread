@@ -2,9 +2,8 @@ package io.lab.imHarish03.practice;
 
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;
-import javax.naming.spi.DirStateFactory.Result;
 
-public class Train1 {
+public class Practice_01_CompletableFeature {
 	public static void main(String[] args) throws InterruptedException, ExecutionException {
 		/*
 		 * Creating a CompletableFuture: Write a program to create a CompletableFuture
@@ -64,6 +63,9 @@ public class Train1 {
 		 * Using thenAccept: Create a CompletableFuture that calculates the factorial of
 		 * a number and prints the result using thenAccept.
 		 */
+		
+		
+		
 	}
 
 }
