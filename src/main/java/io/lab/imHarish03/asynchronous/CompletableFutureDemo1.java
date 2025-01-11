@@ -18,6 +18,7 @@ public class CompletableFutureDemo1 {
 		});
 
 		CompletableFuture<Integer> futureWithCallback = future.thenApply((result) -> {
+			System.out.println(result);
 
 			int totalPoints = result;
 			if (result >= 10 && result <= 100) {
@@ -28,6 +29,7 @@ public class CompletableFutureDemo1 {
 			return totalPoints;
 		});
 
+		System.out.println("Main Thread" + Thread.class.getName());
 		futureWithCallback.complete(150);
 
 		System.out.println("Total points " + futureWithCallback.get());

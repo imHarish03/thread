@@ -5,6 +5,7 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeUnit;
 
 public class StepTwoSolution {
+	
 	public static void main(String[] args) throws InterruptedException, ExecutionException {
 		CompletableFuture<Integer> future = CompletableFuture.supplyAsync(() -> {
 			System.out.println("Calculating the sum of even numbers ...");
