@@ -9,6 +9,7 @@ public class Example1 {
 
 	public static void main(String[] args) throws InterruptedException, ExecutionException {
 		ExecutorService service = Executors.newFixedThreadPool(10);
+		
 		Future<Integer> demoFuture = service.submit(() -> {
 			System.out.println("Async call waiting");
 			Thread.sleep(10000);
